@@ -45,7 +45,7 @@ export default function Footer() {
                     {
                         socials.map((item, idx) => (
                             <li key={idx}>
-                                <a href={item.href} target="_blank">
+                                <a href={item.href} target="_blank" rel="noreferrer">
                                     <i className={`fab fa-${item.icon}`}/>
                                 </a>
                             </li>
