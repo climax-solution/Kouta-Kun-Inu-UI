@@ -10,7 +10,7 @@ import { Navigation } from 'swiper';
 
 const list = [
     [
-        "Website Development", "Contract Development", "Community Building", "Private Presale"
+        "Website Development", "Contract Development", "Checker Board Dapp Development", "Community Building", "Private Presale"
     ],
     [
         "Marketing", "AMAs", "Public Presale", "AMAs"

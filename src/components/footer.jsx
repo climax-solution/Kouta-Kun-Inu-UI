@@ -1,28 +1,32 @@
 const socials = [
     {
         icon: "twitter",
-        href: ""
+        href: "https://twitter.com/KoutaKunInu?s=09"
     },
     {
-        icon: "discord",
-        href: ""
+        icon: "telegram",
+        href: "https://t.me/koutakuninu"
     },
-    {
-        icon: "twitch",
-        href: ""
-    },
-    {
-        icon: "instagram",
-        href: ""
-    },
-    {
-        icon: "linkedin-in",
-        href: ""
-    },
-    {
-        icon: "facebook-f",
-        href: ""
-    },
+    // {
+    //     icon: "discord",
+    //     href: ""
+    // },
+    // {
+    //     icon: "twitch",
+    //     href: ""
+    // },
+    // {
+    //     icon: "instagram",
+    //     href: ""
+    // },
+    // {
+    //     icon: "linkedin-in",
+    //     href: ""
+    // },
+    // {
+    //     icon: "facebook-f",
+    //     href: ""
+    // },
 ]
 
 export default function Footer() {
@@ -41,7 +45,7 @@ export default function Footer() {
                     {
                         socials.map((item, idx) => (
                             <li key={idx}>
-                                <a>
+                                <a href="">
                                     <i className={`fab fa-${item.icon}`}/>
                                 </a>
                             </li>
