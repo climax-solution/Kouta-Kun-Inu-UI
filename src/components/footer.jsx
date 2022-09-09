@@ -45,7 +45,7 @@ export default function Footer() {
                     {
                         socials.map((item, idx) => (
                             <li key={idx}>
-                                <a href="#">
+                                <a href="javascript:void(0);">
                                     <i className={`fab fa-${item.icon}`}/>
                                 </a>
                             </li>
