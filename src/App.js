@@ -4,7 +4,6 @@ import Header from './components/header';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import { useEffect } from 'react';
-import Counter from './components/counter';
 import About from './components/about';
 import Methodology from './components/methodology';
 import Statistics from './components/statistics';
@@ -22,7 +21,6 @@ function App() {
     <>
       <Header/>
       <Banner/>
-      <Counter/>
       <About/>
       <Methodology/>
       <Statistics/>
