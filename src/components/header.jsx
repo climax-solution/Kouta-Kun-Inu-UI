@@ -1,8 +1,8 @@
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import whitepaper from "./whitepaper.pdf";
 
 const navs = [
   {
@@ -59,8 +59,8 @@ export default function Header() {
                     <Nav.Link key={idx} href={item.href} className='py-4 text-white'>{item.title}</Nav.Link>
                   ))
                 }
+                <a href={whitepaper} target="_blank" rel="noreferrer" className='py-4 text-white text-decoration-none'>WHITEPAPER</a>
               </Nav>
-              <Button className='primary-btn border-0 outline-0'>PooCoin</Button>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
         </Container>
