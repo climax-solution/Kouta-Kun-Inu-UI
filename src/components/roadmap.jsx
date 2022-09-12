@@ -1,10 +1,10 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, {
     Pagination,
-} from 'swiper/core';
+} from 'swiper';
 
 import RoadmapItem from './items/roadmap';
-import 'swiper/css';
+import 'swiper/swiper.min.css';
 import { useRef } from 'react';
 import { Navigation } from 'swiper';
 

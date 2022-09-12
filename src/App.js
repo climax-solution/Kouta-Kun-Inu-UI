@@ -10,6 +10,7 @@ import Statistics from './components/statistics';
 import Roadmap from './components/roadmap';
 import Footer from './components/footer';
 import ScrollToTop from 'react-scroll-to-top';
+import { NotificationContainer } from 'react-notifications';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
 
   return (
     <>
+      <NotificationContainer/>
       <Header/>
       <Banner/>
       <About/>
