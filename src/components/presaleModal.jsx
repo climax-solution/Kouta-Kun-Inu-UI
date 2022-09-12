@@ -60,7 +60,7 @@ export default function PresaleModal(props) {
             });
             NotificationManager.success("Success");
         } catch(err) {
-            if (err?.code == 4001) {
+            if (err?.code === 4001) {
                 NotificationManager.warning("Cancelled");
             }
             else NotificationManager.error("Failed");
