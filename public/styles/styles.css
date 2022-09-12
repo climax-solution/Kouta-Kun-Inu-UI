@@ -293,3 +293,30 @@ h1 {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
+.bnb-amount::-webkit-outer-spin-button,
+.bnb-amount::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.bnb-amount[type=number] {
+  -moz-appearance: textfield;
+}
+
+.text-12px {
+  font-size: 12px;
+}
+
+.w-80px {
+  width: 80px;
+}
+
+.modal * {
+  font-family: "Rajdhani", sans-serif;
+}
+
+.modal-content {
+  background-color: #193778;
+}
