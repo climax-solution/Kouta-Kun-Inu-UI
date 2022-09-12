@@ -41,9 +41,13 @@ export default function PresaleModal(props) {
     }
 
     const buy = async() => {
+        if (!bnb_amount || !kki_amount) {
+            NotificationManager.warning("Please input correctly");
+            return;
+        }
+
         setLoading(true);
         try {
-            if (!bnb_amount || !kki_amount) throw Error();
             const accounts = await window.ethereum.request({
                 method: "eth_requestAccounts"
             });
@@ -56,8 +60,10 @@ export default function PresaleModal(props) {
             });
             NotificationManager.success("Success");
         } catch(err) {
-            console.log(err);
-            NotificationManager.error("Failed");
+            if (err?.code == 4001) {
+                NotificationManager.warning("Cancelled");
+            }
+            else NotificationManager.error("Failed");
         }
         setBNBAmount('');
         setKKIAmount('');
